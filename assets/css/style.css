@@ -1,0 +1,58 @@
+/* 
+    Author     : Abinandh MJ, Ayushi Yadav, Ashwini Kumar, Vaishnavi, Vinaydeep Ambati, Harshitha Reddy Gujja
+    version    : v1.0
+*/
+
+/**google font**/
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,700,600,500,300);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    color: #555;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+a {
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #e33333;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0 !important;
+}
+
+button {
+    border: 0px;
+}
+
+button:focus {
+    outline: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+hr.separator {
+    border-top: 1px solid #e33333;
+    margin: 10px auto;
+    width: 250px;
+}
