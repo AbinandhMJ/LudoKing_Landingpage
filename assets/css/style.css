@@ -15,7 +15,7 @@ body {
     font-size: 15px;
     line-height: 28px;
     font-weight: 400;
-    margin-top: 60px;
+    margin: 0 auto;
 }
 
 a {
@@ -55,4 +55,274 @@ hr.separator {
     border-top: 1px solid #e33333;
     margin: 10px auto;
     width: 250px;
+}
+
+/* Home Carousel */
+/* C */
+/* ========================================================================== */
+.c {
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 8px 48px 2px hsla(10 6% 15% / .4);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+    background: hsl(0 0% 90%);
+
+    box-sizing: border-box;
+}
+
+.ci {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: inherit;
+    height: inherit;
+    transform-origin: left 50%;
+
+    background: inherit;
+
+    z-index: var(--z);
+    transition: .3s ease-out;
+}
+
+.ci img {
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.ch {
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    transform: translateY(-50%);
+
+    font-size: 2rem;
+    color: hsla(var(--h) var(--s) var(--l) / .8);
+    text-shadow: 0 2px 10px hsla(var(--h) var(--s) 10% / .3);
+}
+
+input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -10;
+}
+
+label {
+    width: 10%;
+    height: 10px;
+    margin-right: 4px;
+    border-radius: 20px;
+
+    background: hsla(0 0% 90% / .3);
+    cursor: pointer;
+
+    position: relative;
+    z-index: 10;
+}
+
+label:last-child {
+    margin-right: 0;
+}
+
+input:checked+label {
+    background: linear-gradient(to right,
+            hsla(var(--hue) 80% 70% / .7),
+            hsla(calc(var(--hue) + 30) 80% 50% / .7));
+}
+
+input:not(:checked)+label+.ci {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+input:checked+label+.ci~.ci {
+    transform: translateX(100%);
+}
+
+input:not(:checked)+label+.ci {
+    transition: 0;
+}
+
+
+/* ABS */
+/* ========================================================================== */
+.abs-site-link {
+    position: fixed;
+    z-index: 11;
+    bottom: 20px;
+    left: 20px;
+    color: hsla(32 50% 50% / .8);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 3px solid currentColor;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.abs-profiles {
+    position: fixed;
+    z-index: 10;
+    right: 20px;
+    bottom: 23px;
+    opacity: .8;
+}
+
+.abs-profiles img {
+    filter: hue-rotate(71deg) brightness(1.1);
+}
+
+.abs-profiles a {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+/* Home Carousel End */
+/* About Section */
+#about-section {
+    background: #e5b32d;
+    padding: 100px;
+}
+
+.about-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.details hr.separator {
+    margin: 25px 0;
+}
+
+.details h2 {
+    color: #e33333;
+    font-weight: bold;
+    text-align: left;
+    font-size: 30px;
+}
+
+.details p,
+.about-features-box li {
+    color: #fff;
+}
+
+i.fa-solid.fa-dice-six {
+    rotate: 45deg;
+    color: red;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+    margin-right: 15px;
+    animation: dice-animation 2s ease 0s infinite alternate-reverse forwards;
+}
+
+@keyframes dice-animation {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    90% {
+        transform: translateX(-8px);
+    }
+}
+
+.about-features-box ul li {
+    list-style: none;
+}
+
+.about-features-box li {
+    font-weight: bold;
+}
+
+
+.about-column.ludoking-poster img {
+    transition: transform .5s ease;
+    filter: brightness(0.8);
+}
+
+.about-column.ludoking-poster:hover img {
+    filter: unset;
+}
+
+/* Play Now Intersection */
+.play-free-icons {
+    padding-top: 3rem;
+}
+
+.play-free-icons-images {
+    display: flex;
+    justify-content: center;
+    margin-right: 6rem;
+    margin-left: 6rem;
+}
+
+.play-free-icons h2 {
+    color: #e33333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.centerfied-store img,
+.play-free-icons-images img {
+    height: 4rem;
+    width: 15rem;
+    padding: 5px 70px 50px;
+}
+
+/* About Section End */
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 991px) {
+    #about-section {
+        padding: 20px;
+    }
+
+    .about-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-column.ludoking-poster img {
+        width: 100%;
+    }
+
+    .play-free-icons-images {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .about-features-box ul {
+        padding-left: 0px;
+    }
+
+    .centerfied-store img,
+    .play-free-icons-images img {
+        padding: 5px 50px 50px;
+    }
 }
