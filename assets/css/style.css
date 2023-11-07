@@ -296,6 +296,73 @@ i.fa-solid.fa-dice-six {
 
 /* About Section End */
 
+/* Contact form */
+
+.footer{
+   background-color :#333;
+   padding: 40px 0;
+   line-height: 3em;
+   
+}
+.footer .section{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+    font-size:25px
+}
+
+
+.h{
+    width:50%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .socail {
+    text-align: center;
+    /* padding-left:100%; */
+    margin: 100px;
+    color:white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.social{
+    padding-left: 35%;
+}
+
+.footer .social a{
+    font-size: 24px;
+    background-color: white;
+    color:black;
+    border: 2px solid #ccc;
+    width:50px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius:10%;
+    margin: 20px;
+    opacity: 0.75; 
+    font-weight: 100;
+    font-size: 2em; 
+}
+
+a:hover i{
+    color:coral;
+}
+
+.lastsection p{
+    font-size: 20px;
+    color:white;
+    padding-left: 35%;
+}
+.lastsection .img{
+    padding-left: 43%;
+    
+}
+/* contact section end */
+
+
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 991px) {
     #about-section {
