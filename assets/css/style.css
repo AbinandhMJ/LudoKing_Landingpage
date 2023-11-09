@@ -49,6 +49,7 @@ h4,
 h5,
 h6 {
     margin-top: 0px;
+    text-align: center;
 }
 
 hr.separator {
@@ -652,6 +653,25 @@ i.fa-solid.fa-dice-six {
 
 /* Screengrabs End */
 
+
+/*Exciting-Invetory Section*/
+
+#exciting-inventory-video
+{
+    display: block; 
+    margin: auto;
+    width:560px;
+    height:315px;
+}
+
+h4
+{
+    font-weight: 400; 
+    font-size: 14px;
+}
+
+/*Exciting-Invetory Section End*/
+
 /* Review Section */
 
 #review-section {
@@ -836,6 +856,9 @@ a:hover i {
 /* Contact Section End */
 
 
+
+
+
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 991px) {
     #about-section {
@@ -865,5 +888,11 @@ a:hover i {
     .centerfied-store img,
     .play-free-icons-images img {
         padding: 5px 50px 50px;
+    }
+
+    #exciting-inventory-video
+    {
+        height:190px;
+        width:350px;
     }
 }
