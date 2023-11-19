@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <!-- External CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -21,31 +22,33 @@
 
 <body>
 
-    <!-- Home Carousel -->
-    <section id="home-section">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#"><img src="assets\images\logo.png" alt="Logo"></a>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container nav-container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
             </div>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-button">
-                <div class="menu-icon"></div>
-            </label>
-            <div class="nav-group">
-                <div class="reviews-contact-play">
-                    <ul class="nav-links">
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    </ul>
-                    <div class="play-button">
-                        <a href="#">Play Now</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+            <ul class="menu-items">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#media-section">Media</a></li>
+                <li><a href="#inventory-section">Inventory</a></li>
+                <li><a href="#review-section">Reviews </a></li>
+                <li><a href="#">Contact</a></li>
+                <a href="https://ludokinglive.com/" class="download-btn" target="_blank" rel="noopener noreferrer">Play
+                    Now</a>
+            </ul>
+            <h1 class="logo"><img src="assets\images\logo.png" height="35" alt="Logo"></h1>
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
+    <!-- Hero Section -->
+    <section id="hero-section">
         <div class="carousel">
             <div class="carousel-inner">
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
@@ -81,7 +84,7 @@
             </div>
         </div>
     </section>
-    <!-- Home Carousel End -->
+    <!-- Hero Section End-->
 
     <!-- About Section -->
     <section id="about-section">
@@ -116,7 +119,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Play Now For FREE!  Intersection-->
         <div class="play-free-icons">
             <h2>Play Now For FREE!</h2>
@@ -135,11 +138,10 @@
             </div>
         </div>
     </section>
-    <!-- About Section End -->
+    <!-- About Section End-->
 
     <!-- Features Section -->
-
-    <div id="features">
+    <section id="features">
         <div class="section_heading">
             <h3 class="features-heading"><strong>AMAZING FEATURES</strong></h3>
             <hr class="separator">
@@ -211,12 +213,11 @@
                 </div>
             </div>
         </section>
-    </div>
+    </section>
+    <!-- Features Section -->
 
-    <!-- Features Section End -->   
-
-    <!-- Brands Section -->
-    <section id="brands-section">
+    <!-- Media Section -->
+    <section id="media-section">
         <a href="https://ludokinglive.com/" target="_blank" <div class="slider">
             <div class="slide-track">
                 <div class="slide">
@@ -259,25 +260,25 @@
             </div>
         </a>
     </section>
-    <!-- Play Now Section End -->
+    <!-- Media Section End -->
 
-
-
-  <!-- Exciting Inventory Section -->
-    <section id="exciting-inventory-section">
-        <div class="main">
-            <h1><b>Ludo King Exciting Inventory</b></h1>
+    <!-- Inventory Section -->
+    <section id="inventory-section">
+        <div class="inventory-content">
+            <h3><strong>Ludo King Exciting Inventory</strong></h3>
             <hr class="separator">
-            <h4>Get access to theme, new dices, funny emojis, voice notes, rewards & more!</h4>
+            <p>
+                <font>Get access to theme, new dices, funny emojis, voice notes, rewards & more!</font>
+            </p>
         </div>
 
-        <iframe id="exciting-inventory-video" src="https://www.youtube.com/embed/vXWJkT_0Hx4" frameborder="0" allowfullscreen></iframe>
-       
+        <center><iframe id="exciting-inventory-video" src="https://www.youtube.com/embed/vXWJkT_0Hx4" frameborder="0"
+                allowfullscreen></iframe></center>
 
     </section>
-    <!-- Exciting Inventory Section End -->
+    <!-- Inventory Section End -->
 
-    <!-- Review Section -->
+    <!-- Reviews Section -->
     <section id="review-section">
         <div class="main">
             <h1><b>What People Are Saying About Ludo King</b></h1>
@@ -448,9 +449,9 @@
         </div>
 
     </section>
-    <!-- Review Section End -->
+    <!-- Reviews Section End -->
 
-    <!-- contact section -->
+    <!-- Contact Section -->
     <footer class="footer">
         <div class="section">
             <span>Contact Us</span><br>
@@ -485,7 +486,7 @@
         </div>
     </footer>
     <!-- Contact Section End -->
-</body>
+
 
 </body>
 
