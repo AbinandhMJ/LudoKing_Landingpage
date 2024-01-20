@@ -1,5 +1,5 @@
-# Ludoking Clone
-![Ludoking Clone Logo](https://github.com/AbinandhMJ/LudoKing/assets/99226172/596defa1-5ea8-41dd-8b9d-1e78305a410c)
+# Ludoking Landing Page Clone
+![Ludoking Landing Page Logo](https://github.com/AbinandhMJ/LudoKing/assets/99226172/596defa1-5ea8-41dd-8b9d-1e78305a410c)
 
 ## Overview
 
