@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains the source code for a Ludoking clone, a web-based multiplayer board game inspired by the popular Ludo game. The project aims to replicate the core gameplay and features of Ludoking while allowing for customization and extensibility.
+This repository contains the source code for a Ludoking Landing Pageclone, a web-based multiplayer board game inspired by the popular Ludo game. The project aims to replicate the core gameplay and features of Ludoking while allowing for customization and extensibility.
 
 ## Features
 
